@@ -3,38 +3,14 @@ import { Link } from 'react-router-dom';
 import './About.css';
 
 function About() {
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Jane Doe",
-      position: "CEO",
-      image: "https://via.placeholder.com/150",
-      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      id: 2,
-      name: "John Smith",
-      position: "CTO",
-      image: "https://via.placeholder.com/150",
-      bio: "Nullam quis risus eget urna mollis ornare vel eu leo."
-    },
-    {
-      id: 3,
-      name: "Emily Chen",
-      position: "Design Lead",
-      image: "https://via.placeholder.com/150",
-      bio: "Aenean eu leo quam. Pellentesque ornare sem lacinia."
-    }
-  ];
-
   return (
     <div className="about-container">
       <header className="about-header">
-        <h1>About Us</h1>
-        <p className="tagline">Crafting innovative solutions for tomorrow's challenges</p>
+        <h1>About Akura</h1>
+        <p className="tagline">Transforming ideas into digital realities</p>
       </header>
-
-      <section className="about-story">
+      
+      <section>
         <div className="content-wrapper">
           <h2>Our Story</h2>
           <div className="story-content">
@@ -42,64 +18,84 @@ function About() {
               <div className="image-placeholder"></div>
             </div>
             <div className="story-text">
-              <p>Founded in 2020, our company has been at the forefront of technological innovation. We believe in creating solutions that not only solve today's problems but anticipate tomorrow's challenges.</p>
-              <p>Our journey began with a simple idea: technology should serve humanity, not the other way around. Since then, we've grown into a team of passionate individuals dedicated to making that vision a reality.</p>
+              <p>Founded in 2020, Akura began with a simple vision: to create innovative digital solutions that make a difference. What started as a small team of passionate developers has grown into a thriving company dedicated to excellence in software development.</p>
+              <p>Through the years, we've partnered with businesses of all sizes, helping them navigate the complex digital landscape with custom solutions tailored to their unique needs.</p>
             </div>
           </div>
         </div>
       </section>
-
-      <section className="about-mission">
+      
+      <section>
         <div className="content-wrapper">
-          <h2>Our Mission & Values</h2>
+          <h2>Our Values</h2>
           <div className="values-container">
             <div className="value-card">
               <div className="value-icon">🚀</div>
               <h3>Innovation</h3>
-              <p>We push boundaries and explore new possibilities.</p>
+              <p>We constantly push boundaries and explore new technologies to deliver cutting-edge solutions.</p>
             </div>
             <div className="value-card">
               <div className="value-icon">🤝</div>
               <h3>Collaboration</h3>
-              <p>We believe great things happen when we work together.</p>
+              <p>We believe in the power of teamwork and building strong partnerships with our clients.</p>
             </div>
             <div className="value-card">
-              <div className="value-icon">♻️</div>
-              <h3>Sustainability</h3>
-              <p>We build with the future of our planet in mind.</p>
+              <div className="value-icon">⚙️</div>
+              <h3>Excellence</h3>
+              <p>We are committed to delivering the highest quality in everything we do.</p>
             </div>
           </div>
         </div>
       </section>
-
-      <section className="about-team">
+      
+      <section>
         <div className="content-wrapper">
-          <h2>Meet Our Team</h2>
+          <h2>Our Team</h2>
           <div className="team-grid">
-            {teamMembers.map(member => (
-              <div className="team-member" key={member.id}>
-                <div className="member-image">
-                  <img src={member.image} alt={member.name} />
-                </div>
-                <h3>{member.name}</h3>
-                <p className="position">{member.position}</p>
-                <p className="bio">{member.bio}</p>
+            <div className="team-member">
+              <div className="member-image">
+                <div className="image-placeholder"></div>
               </div>
-            ))}
+              <h3>John Doe</h3>
+              <p className="position">CEO & Founder</p>
+              <p className="bio">With over 15 years of experience in software development, John leads our team with vision and expertise.</p>
+            </div>
+            <div className="team-member">
+              <div className="member-image">
+                <div className="image-placeholder"></div>
+              </div>
+              <h3>Jane Smith</h3>
+              <p className="position">CTO</p>
+              <p className="bio">Jane's technical knowledge and leadership skills drive our development process and technological innovation.</p>
+            </div>
+            <div className="team-member">
+              <div className="member-image">
+                <div className="image-placeholder"></div>
+              </div>
+              <h3>Alex Johnson</h3>
+              <p className="position">Lead Designer</p>
+              <p className="bio">Alex brings creativity and user-centered thinking to every project, ensuring beautiful and functional designs.</p>
+            </div>
+            <div className="team-member">
+              <div className="member-image">
+                <div className="image-placeholder"></div>
+              </div>
+              <h3>Sarah Williams</h3>
+              <p className="position">Project Manager</p>
+              <p className="bio">Sarah's organizational skills and attention to detail keep our projects on track and our clients happy.</p>
+            </div>
           </div>
         </div>
       </section>
-
+      
       <section className="about-contact">
-        <div className="content-wrapper">
-          <h2>Get In Touch</h2>
-          <p>We'd love to hear from you! Contact us to learn more about our services or to join our team.</p>
-          <button className="contact-button">Contact Us</button>
-        </div>
+        <h2>Get In Touch</h2>
+        <p>Interested in working with us? We'd love to hear from you!</p>
+        <button className="contact-button">Contact Us</button>
       </section>
-
+      
       <div className="navigation-link">
-        <Link to="/">Back to Home</Link>
+        <Link to="/">Return to Home</Link>
       </div>
     </div>
   );
